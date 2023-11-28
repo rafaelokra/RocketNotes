@@ -5,7 +5,7 @@ import { Button } from '../../components/Button'
 
 import { Container, Form, Background } from './style'
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <Form>
