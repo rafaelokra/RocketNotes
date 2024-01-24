@@ -13,9 +13,11 @@ function AuthProvider({ children }){
     try {
       const response = await api.post("/sessions", { email, password });
       const { user, token } = response.data;
-
-      api.defaults.headers.authorization = `Bearer ${token}`;
+     
+     api.defaults.headers.authorization = `Bearer ${token}`;
       setData({ user, token })
+
+    
 
     } catch( error ){
       if ( error.response ) {
