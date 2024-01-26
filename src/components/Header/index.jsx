@@ -2,11 +2,12 @@ import { RiShutDownLine } from 'react-icons/ri';
 import { Container, Profile, Logout  } from './styles';
 import { useAuth } from "../../hooks/auth";
 import { api } from "../../Services/api"
+import  AvatarPlaceholder from "../../assets/avatar_placeholder.svg";
 
 export function Header() {
   const { signOut, user } = useAuth();
 
-  const avatarUrl = user.avatar  ? `${api.defaults.baseURL}/files/${user.avatar}` : AvatarPlaceholder;
+  const avatarUrl = user.avatar  ? `${api.defaults.baseURL}/files/${user.avatar}` :  AvatarPlaceholder;
 
   return (
     <Container>
@@ -18,7 +19,7 @@ export function Header() {
         />
 
         <div>
-          <span>Bem-vindo</span>
+          <span>Bem-Vindo</span>
           <strong>{user.name}</strong>
         </div>
 

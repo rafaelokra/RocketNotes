@@ -20,7 +20,7 @@ const [email, setEmail] = useState(user.email);
 const [passwordOld, setPasswordOld] = useState();
 const [passwordNew, setPasswordNew] = useState();
 
-const avatarUrl = user.avatar  ? `${api.defaults.baseURL}/files/${user.avatar}` : AvatarPlaceholder;
+const avatarUrl = user.avatar  ? `${api.defaults.baseURL}/files/${user.avatar}` :  AvatarPlaceholder;
 
 const [ avatar, setAvatar] = useState(avatarUrl);
 const [ avatarFile, setAvatarFile] = useState(null);
