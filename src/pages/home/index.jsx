@@ -31,17 +31,17 @@ useEffect(() => {
       <Header></Header>
 
       <Menu>
-      <li>
-        <ButtonText
-            title="Todos" 
-            isactive
-           />
-          </li>
+          <li>
+            <ButtonText 
+              title="Todos"  $isactive 
+                            
+            />
+        </li>
         {
            tags &&  tags.map(tag => (
           <li key={String(tag.id)}>
-             <ButtonText
-              title={tag.name}
+              <ButtonText
+                title={tag.name}
               />
            </li>
           ))
