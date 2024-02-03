@@ -3,16 +3,16 @@ import { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import { Textarea } from '../../components/Textarea'
-import { NoteItem } from '../../components/NoteItem'
-import { Section } from '../../components/Section'
-import { Button } from '../../components/Button'
-import { ButtonText } from '../../components/ButtonText'
-import { Header } from '../../components/Header'
-import { Input } from '../../components/Input'
+import { Textarea } from '../../components/Textarea';
+import { NoteItem } from '../../components/NoteItem';
+import { Section } from '../../components/Section';
+import { Button } from '../../components/Button';
+import { ButtonText } from '../../components/ButtonText';
+import { Header } from '../../components/Header';
+import { Input } from '../../components/Input';
 import { api } from '../../Services/api';
 
-import { Container, Form } from './style'
+import { Container, Form } from './style';
 
 export function New() {
   const [title, setTitle] = useState("");
