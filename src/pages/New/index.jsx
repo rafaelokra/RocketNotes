@@ -46,9 +46,9 @@ export function New() {
   }
 
   function handleRemoveTag(deleted){
-    setTags(prevState => prevState.filter((tag) => tag !== deleted ));
+    
   }
-
+  setTags(prevState => prevState.filter((tag) => tag !== deleted ));
    async function handleNewNote(){
     if(!title){
       return alert("Digite o titulo da nota");
