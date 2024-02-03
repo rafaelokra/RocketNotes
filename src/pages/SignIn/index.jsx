@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from "../../hooks/auth"
 
 import { Input } from '../../components/Input'
-import { Button } from '../../components/Button'
+import { Button} from '../../components/Button'
 
 import { Container, Form, Background } from './style'
 
