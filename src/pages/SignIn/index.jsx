@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from "../../hooks/auth"
 
 import { Input } from '../../components/Input'
-import { ButtonText} from '../../components/ButtonText'
+import { Button} from '../../components/Button'
 
 import { Container, Form, Background } from './style'
 
@@ -43,7 +43,7 @@ export function SignIn() {
           onChange={e => setPassword(e.target.value)}
         />
 
-        <ButtonText title="Entrar" onClick={handleSignIn} />
+        <Button title="Entrar" onClick={handleSignIn} />
 
         <Link to='/register'>
           Criar conta
