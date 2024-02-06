@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { api } from '../../Services/api';
 import { useState } from 'react'
 import { Input } from '../../components/Input'
-import { Button } from '../../components/Button/index'
+import { Button } from '../../components/Button/index.jsx'
 
 import { Container, Form, Background } from './style'
 
