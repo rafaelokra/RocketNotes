@@ -5,7 +5,7 @@ import { useAuth } from "../../hooks/auth"
 import { api } from "../../Services/api"
 import  AvatarPlaceholder from "../../assets/avatar_placeholder.svg"
 import { Input } from '../../components/Input'
-import { Button } from '../../components/Button'
+import { Button } from '../../components/button'
 import { Container, Form, Avatar } from "./style"
 import { Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
