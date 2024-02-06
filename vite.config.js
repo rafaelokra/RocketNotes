@@ -1,18 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-// vite.config.js
-import { defineConfig } from 'vite';
-import nodeResolve from '@rollup/plugin-node-resolve';
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [],
-  build: {
-    rollupOptions: {
-      plugins: [
-        nodeResolve({
-          // opções do plugin
-        })
-      ]
-    }
-  }
-});
+  plugins: [react()],
+})
