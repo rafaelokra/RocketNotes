@@ -27,7 +27,7 @@ export function New() {
   const navigate = useNavigate();
 
   function handleBack(){
-    navigate(-1);
+    navigate(-1)
   }
 
 
@@ -46,23 +46,23 @@ export function New() {
   }
 
   function handleRemoveTag(deleted){
-    
+    setTags(prevState => prevState.filter((tag) => tag !== deleted ));
   }
-  setTags(prevState => prevState.filter((tag) => tag !== deleted ));
-   async function handleNewNote(){
-    if(!title){
-      return alert("Digite o titulo da nota");
-    }
-
-    if(newLink) {
-      return alert("Voce deixou um link no campo para adicionar, mais nao clicou em adicionar. Clique para acicionar ou deixe o campo vazio.")
-    }
     
-    if(newTag){
-      return alert("Voce deixou uma tag no campo para adicionar, mais nao clicou em adicionar. Clique para acicionar ou deixe o campo vazio.")
-    }
+    async function handleNewNote(){
+      if(!title){
+        return alert("Digite o titulo da nota");
+      }
 
-   
+      if(newLink) {
+        return alert("Voce deixou um link no campo para adicionar, mais nao clicou em adicionar. Clique para acicionar ou deixe o campo vazio.")
+      }
+      
+      if(newTag){
+        return alert("Voce deixou uma tag no campo para adicionar, mais nao clicou em adicionar. Clique para acicionar ou deixe o campo vazio.")
+      }
+
+ 
     await api.post("/notes",{
       title,
       description,
